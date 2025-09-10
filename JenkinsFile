@@ -1,1 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                
+        stage('Gm') {
+            steps {
+                echo 'Good Morning'
+            }}
+        stage('Bye') {
+            steps {
+                echo 'Good Bye'
+            }
+        }
+    }
+}
 
