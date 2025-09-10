@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Clone') {
             steps {
-                echo 'Hello World'
-            }}
+                
         stage('Gm') {
             steps {
                 echo 'Good Morning'
