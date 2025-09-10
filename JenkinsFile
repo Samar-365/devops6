@@ -4,14 +4,16 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
+                git branch: 'main', credentialsId: '7c278272-a4a0-4985-9fba-4f62e803807f', url: 'https://github.com/Samar-365/devops6.git'
+            }}
                 
-        stage('Gm') {
+        stage('Compile') {
             steps {
-                echo 'Good Morning'
+                bat 'javac helloworld.java'
             }}
         stage('Bye') {
             steps {
-                echo 'Good Bye'
+                bat 'java helloworld'
             }
         }
     }
